@@ -2,79 +2,76 @@ import { HttpClient } from "@angular/common/http";
 import { Component } from "@angular/core";
 @Component({
     selector:'app-home',
-    templateUrl: "./home.component.html"
+    templateUrl: "./home.component.html",
+    styleUrls: ["./home.component.css"]
 })
 export class HomeComponent{
-    ToDo = [
+    td = [
         {
-            "name":"task 1",
-            "content":"Analyze the new requirements gathered from the customer."
+            "task":"Task 1",
+            "desc":"Analyze the new requirements gathered from the customer."
         },
         {
-            "name":"task 3",
-            "content":"Arrange a web meeting with the customer to get new requirements."
+            "task":"Task 3",
+            "desc":"Arrange a web meeting with the customer to get new requirements."
         },
         {
-            "name":"task 10",
-            "content":"Show the retrieved data from the server in grid control."
+            "task":"Task 10",
+            "desc":"Show the retrieved data from the server in grid control."
+        },
+    ]
+    ip = [
+        {
+            "task":"Task 2",
+            "desc":"Improve application performance."
         },
         {
-            "name":"task 20",
-            "content":"Enhance editing"
+            "task":"Task 4",
+            "desc":"Fix the issues reported in the IE browser."
+        },
+        {
+            "task":"Task 11",
+            "desc":"Fix cannot open user's default database SQL error."
+        },
+        {
+            "task":"Task 21",
+            "desc":"Improve the peformance of the editing functionality."
         }
     ]
-    InProgress = [
+    ir = [
         {
-            "name":"task 2",
-            "content":"Improve a"
+            "task":"Task 5",
+            "desc":"Fix the issues reported by the customer."
         },
         {
-            "name":"task 6",
-            "content":"content 6"
+            "task":"Task 7",
+            "desc":"Fix the issues reported in Safari browser."
         },
         {
-            "name":"task 7",
-            "content":"content 7"
+            "task":"Task 12",
+            "desc":"Fix the issues reported in data binding."
         },
         {
-            "name":"task 8",
-            "content":"content 8"
+            "task":"Task 19",
+            "desc":"Test editing functionality."
         }
     ]
-    InReview = [
+    done = [
         {
-            "name":"task 9",
-            "content":"content 9"
+            "task":"Task 8",
+            "desc":"Test the application in the IE browser."
         },
         {
-            "name":"task 10",
-            "content":"content 10"
+            "task":"Task 13",
+            "desc":"Analyze SQL server 2008 connection."
         },
         {
-            "name":"task 11",
-            "content":"content 11"
+            "task":"Task 15",
+            "desc":"Analyze gird control."
         },
         {
-            "name":"task 12",
-            "content":"content 12"
-        }
-    ]
-    Done = [
-        {
-            "name":"task 13",
-            "content":"content 13"
-        },
-        {
-            "name":"task 14",
-            "content":"content 14"
-        },
-        {
-            "name":"task 15",
-            "content":"content 15"
-        },
-        {
-            "name":"task 16",
-            "content":"content 16"
+            "task":"Task 16",
+            "desc":"Stored procedure for intial data binding of the gird."
         }
     ]
 

@@ -2,52 +2,76 @@
     <div class="container">
         <div class="row">
             <div class="col-3">
-                <div *ngFor="let t of ToDo" class="card">
-                    <div class="kbhead">
-                        <h3>{{t.name}}</h3>
-                    </div>
-                    <div class="kbmain">
-                        <div class="kbcontent">
-                            <h3>{{t.content}}</h3>
+                <div class="name">
+                    <div class="icon"><a href="#"><i class="fa-brands fa-html5"></i></a></div>
+                    <div><strong>To Do</strong></div>                  
+                </div>
+                <div class="all">
+                    <div *ngFor="let t of td" class="card">
+                        <div class="kbhead">
+                            <h3>{{t.task}}</h3>
+                        </div>
+                        <div class="kbmain">
+                            <div class="kbcontent">
+                                <p>{{t.desc}}</p>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
 
             <div class="col-3">
-                <div *ngFor="let t of InProgress" class="card">
-                    <div class="kbhead">
-                        <h3>{{t.name}}</h3>
-                    </div>
-                    <div class="kbmain">
-                        <div class="kbcontent">
-                            <h3>{{t.content}}</h3>
+                <div class="name">
+                    <div class="icon"><a href="#"><i class="fa-brands fa-css3-alt"></i></a></div>
+                    <div><strong>In Progress</strong></div>      
+                </div>
+                <div class="all">
+                    <div *ngFor="let t of ip" class="card">
+                        <div class="kbhead">
+                            <h3>{{t.task}}</h3>
+                        </div>
+                        <div class="kbmain">
+                            <div class="kbcontent">
+                                <p>{{t.desc}}</p>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
 
             <div class="col-3">
-                <div *ngFor="let t of InReview" class="card">
-                    <div class="kbhead">
-                        <h3>{{t.name}}</h3>
-                    </div>
-                    <div class="kbmain">
-                        <div class="kbcontent">
-                            <h3>{{t.content}}</h3>
+                <div class="name">
+                    <div class="icon"><a href="#"><i class="fa-brands fa-js"></i></a></div>
+                    <div><strong>In Review</strong></div>
+                </div>
+                <div class="all">
+                    <div *ngFor="let t of ir" class="card">
+                        <div class="kbhead">
+                            <h3>{{t.task}}</h3>
+                        </div>
+                        <div class="kbmain">
+                            <div class="kbcontent">
+                                <p>{{t.desc}}</p>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
 
             <div class="col-3">
-                <div *ngFor="let t of Done" class="card">
-                    <div class="kbhead">
-                        <h3>{{t.name}}</h3>
-                    </div>
-                    <div class="kbmain">
-                        <div class="kbcontent">
-                            <h3>{{t.content}}</h3>
+                <div class="name">
+                    <div class="icon"><a href="#"><i class="fa-brands fa-angular"></i></a></div>
+                    <div><strong>Done</strong></div>      
+                </div>
+                <div class="all">
+                    <div *ngFor="let t of done" class="card">
+                        <div class="kbhead">
+                            <h3>{{t.task}}</h3>
+                        </div>
+                        <div class="kbmain">
+                            <div class="kbcontent">
+                                <p>{{t.desc}}</p>
+                            </div>
                         </div>
                     </div>
                 </div>
