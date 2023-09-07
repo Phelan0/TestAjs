@@ -1,0 +1,58 @@
+<section>
+    <div class="container">
+        <div class="row">
+            <div class="col-3">
+                <div *ngFor="let t of ToDo" class="card">
+                    <div class="kbhead">
+                        <h3>{{t.name}}</h3>
+                    </div>
+                    <div class="kbmain">
+                        <div class="kbcontent">
+                            <h3>{{t.content}}</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-3">
+                <div *ngFor="let t of InProgress" class="card">
+                    <div class="kbhead">
+                        <h3>{{t.name}}</h3>
+                    </div>
+                    <div class="kbmain">
+                        <div class="kbcontent">
+                            <h3>{{t.content}}</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-3">
+                <div *ngFor="let t of InReview" class="card">
+                    <div class="kbhead">
+                        <h3>{{t.name}}</h3>
+                    </div>
+                    <div class="kbmain">
+                        <div class="kbcontent">
+                            <h3>{{t.content}}</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-3">
+                <div *ngFor="let t of Done" class="card">
+                    <div class="kbhead">
+                        <h3>{{t.name}}</h3>
+                    </div>
+                    <div class="kbmain">
+                        <div class="kbcontent">
+                            <h3>{{t.content}}</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
